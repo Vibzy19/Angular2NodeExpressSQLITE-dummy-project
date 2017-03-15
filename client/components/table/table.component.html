@@ -1,0 +1,19 @@
+<div [class]="containerClass" [class.containerStyle] = "true">
+    <div class="table-responsive"> 
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th *ngFor = "let colname of colnames">{{colname}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor ="let cat of categorySentiment" >
+                    <td>{{cat.category}}</td>
+                    <td>{{cat.sentiment}}</td>
+                    <td>{{cat.volume}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>
